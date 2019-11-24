@@ -1,11 +1,14 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import styles from './PageNav.scss';
 
 const PageNav = () => (
-  <nav>
+  <nav style={{ textTransform: 'uppercase', fontSize: '20px' }}>
     <NavLink
-      className={styles.navLink}
+      style={{
+        textDecoration: 'none',
+        margin: '12px',
+        color: 'darkgreen',
+      }}
       exact
       to={`${process.env.PUBLIC_URL}/`}
       activeClassName="active"
@@ -13,28 +16,44 @@ const PageNav = () => (
       home
     </NavLink>
     <NavLink
-      className={styles.navLink}
+      style={{
+        textDecoration: 'none',
+        margin: '12px',
+        color: 'darkgreen',
+      }}
       to={`${process.env.PUBLIC_URL}/login`}
       activeClassName="active"
     >
       login
     </NavLink>
     <NavLink
-      className={styles.navLink}
+      style={{
+        textDecoration: 'none',
+        margin: '12px',
+        color: 'darkgreen',
+      }}
       to={`${process.env.PUBLIC_URL}/kitchen`}
       activeClassName="active"
     >
       kitchen
     </NavLink>
     <NavLink
-      className={styles.navLink}
+      style={{
+        textDecoration: 'none',
+        margin: '12px',
+        color: 'darkgreen',
+      }}
       to={`${process.env.PUBLIC_URL}/tables`}
       activeClassName="active"
     >
       tables
     </NavLink>
     <NavLink
-      className={styles.navLink}
+      style={{
+        textDecoration: 'none',
+        margin: '12px',
+        color: 'darkgreen',
+      }}
       to={`${process.env.PUBLIC_URL}/waiter`}
       activeClassName="active"
     >
