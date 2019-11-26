@@ -1,1 +1,7 @@
+@import "normalize.scss";
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
