@@ -5,7 +5,7 @@ import Button from '@material-ui/core/Button';
 
 
 const PageNav = () => (
-  <nav>
+  <nav className={styles.component}>
     <Button className={styles.link} component={NavLink} exact to={`${process.env.PUBLIC_URL}/`} activeClassName="active">home</Button>
     <Button className={styles.link} component={NavLink} to={`${process.env.PUBLIC_URL}/login`} activeClassName="active">login</Button>
     <Button className={styles.link} component={NavLink} to={`${process.env.PUBLIC_URL}/kitchen`} activeClassName="active">kitchen</Button>

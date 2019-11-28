@@ -1,6 +1,6 @@
 import React from 'react';
-import PageNav from '../PageNav/PageNav';
 import PropTypes from 'prop-types';
+import PageNav from '../PageNav/PageNav';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Container from '@material-ui/core/Container';
@@ -22,7 +22,7 @@ const MainLayout = ({ children }) => (
 );
 
 MainLayout.propTypes = {
-  children: PropTypes.any,
+  children: PropTypes.node,
 };
 
 export default MainLayout;
