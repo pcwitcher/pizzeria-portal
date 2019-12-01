@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Waiter.scss';
+import styles from './Waiter.module.scss';
 import PropTypes from 'prop-types';
 
 const WaiterOrderEdit = props => (

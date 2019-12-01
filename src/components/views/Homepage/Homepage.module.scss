@@ -1,0 +1,15 @@
+@import '../../../styles/settings.scss';
+
+.component {
+  padding: $base-size;
+}
+
+.orders,
+.bookings {
+  margin: 20px;
+}
+
+.paper {
+  margin: 20px;
+  padding: 20px;
+}

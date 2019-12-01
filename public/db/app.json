@@ -1,6 +1,5 @@
 {
-  "product": [
-    {
+  "product": [{
       "id": "cake",
       "class": "small",
       "name": "Zio Stefano's Doughnut",
@@ -199,8 +198,7 @@
     }
   ],
   "order": [],
-  "event": [
-    {
+  "event": [{
       "id": 1,
       "date": "2019-09-15",
       "hour": "12:30",
@@ -251,18 +249,36 @@
       "starters": ["lemonWater"]
     }
   ],
-  "booking": [
+  "booking": [],
+  "tables": [{
+      "id": "1",
+      "status": "free",
+      "order": null
+    },
     {
-      "id": 1,
-      "date": "2019-09-18",
-      "hour": "12:30",
-      "table": 1,
-      "repeat": "daily",
-      "duration": 3,
-      "ppl": 3,
-      "starters": ["lemonWater"]
-
+      "id": "2",
+      "status": "thinking",
+      "order": null
+    },
+    {
+      "id": "3",
+      "status": "ordered",
+      "order": 123
+    },
+    {
+      "id": "4",
+      "status": "prepared",
+      "order": 234
+    },
+    {
+      "id": "5",
+      "status": "delivered",
+      "order": 345
+    },
+    {
+      "id": "6",
+      "status": "paid",
+      "order": 456
     }
-
   ]
 }
