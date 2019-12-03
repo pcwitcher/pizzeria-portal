@@ -10,7 +10,7 @@ import TablesEventsEdit from './components/views/Tables/TablesEventsEdit';
 import TablesEventsNew from './components/views/Tables/TablesEventsNew';
 import WaiterOrderNew from './components/views/Waiter/WaiterOrderNew';
 import WaiterOrderEdit from './components/views/Waiter/WaiterOrderEdit';
-import Waiter from './components/views/Waiter/Waiter';
+import Waiter from './components/views/Waiter/WaiterContainer';
 import { StylesProvider } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
