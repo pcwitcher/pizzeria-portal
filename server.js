@@ -3,6 +3,7 @@
 const fs = require('fs');
 const path = require('path');
 const jsonServer = require('json-server');
+const cors = require('cors');
 const server = jsonServer.create();
 const router = jsonServer.router('build/db/app.json');
 const middlewares = jsonServer.defaults({
@@ -23,6 +24,10 @@ server.get(/^\/panel.*/, (req, res) => {
   }
 });
 
+server.use(cors());
+server.use(middlewares);
+server.use(router);
+
 server.use(function (req, res, next) {
   const api = /^\/api(.*)$/.exec(req.url);
 
@@ -34,7 +39,5 @@ server.use(function (req, res, next) {
   next();
 });
 
-server.use(middlewares);
-server.use(router);
 
 server.listen(port);
